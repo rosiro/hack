@@ -34,7 +34,35 @@ server {
     }
   }
 }
-````
+```
 
+## perl
+### carton
 
+```shell
+carton exec plackup -s Starman --socket=/tmp/nginx.sock -E prod --workers 10 --disable-keepalive app.psgi
 
+```
+### DEVEL::KYTPROF
+https://github.com/onishi/perl5-devel-kytprof
+```perl
+use Devel::KYTProf;
+```
+
+## mysql
+### index
+
+インデックス確認
+```mysql
+SHOW INDEX FROM TABLE_NAME;
+```
+
+インデックス追加
+```mysql
+ALTER TABLE TABLE_NAME ADD INDEX index_name(column name);
+
+```
+インデックス削除
+```mysql
+ALTER TABLE TABLE_NAME DROP INDEX index_name;
+```
