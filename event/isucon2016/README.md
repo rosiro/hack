@@ -2,7 +2,7 @@
 
 ## nginx
 
-``nginx
+```nginx
 worker_processes  1;
 
 events {
@@ -34,5 +34,7 @@ server {
     }
   }
 }
-``
+````
+
+
 
